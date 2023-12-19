@@ -8,7 +8,7 @@ I used [Skeleton](https://www.skeleton.dev/) (Sveltekit) for frontend, and [Taur
 
 After first start, a todos.json will be created with empty todos list.
 
-<img src="screenshots/first_start.jpg" alt="first_start" width="500px">
+![first_start](screenshots/first_start.jpg)
 
 Features:
 
@@ -20,11 +20,11 @@ Features:
 
 Adding or editing todo:
 
-<img src="screenshots/add_or_edit.jpg" alt="add_or_edit" width="500px">
+![add_or_edit](screenshots/add_or_edit.jpg)
 
 After adding and completing todos:
 
-<img src="screenshots/with_todos.jpg" alt="with_todos" width="500px">
+![with_todos](screenshots/with_todos.jpg)
 
 Todo:
 
