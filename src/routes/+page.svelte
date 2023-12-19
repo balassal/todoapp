@@ -76,12 +76,12 @@
 			{#if !todo.completed}
 				<div class="card mb-6">
 					<section class="p-4">
-						<div class="text-left">
+						<div class="text-left" style="white-space: pre-line;">
 							{todo.todo}
 						</div>
 						{#if todo.notes && todo.notes !== ''}
 							<hr class="my-4" />
-							<div class="mt-2 italic justify-start text-left">
+							<div class="mt-2 italic justify-start text-left" style="white-space: pre-line;">
 								{todo.notes}
 							</div>
 						{/if}
@@ -166,12 +166,12 @@
 			{#if todo.completed}
 				<div class="card mb-6">
 					<section class="p-4">
-						<div class="text-left">
+						<div class="text-left" style="white-space: pre-line;">
 							{todo.todo}
 						</div>
 						{#if todo.notes && todo.notes !== ''}
 							<hr class="my-4" />
-							<div class="mt-2 italic justify-start text-left">
+							<div class="mt-2 italic justify-start text-left" style="white-space: pre-line;">
 								{todo.notes}
 							</div>
 						{/if}
