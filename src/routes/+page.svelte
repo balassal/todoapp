@@ -28,20 +28,22 @@
 				title: 'Edit Todo',
 				meta: { todo: todo },
 				response: (resp) => {
-					todos.update((items) => {
-						const findTodo = items.find((t) => t.uuid === todo.uuid);
-						if (findTodo) {
-							findTodo.todo = resp.todo;
-							findTodo.notes = resp.notes;
-							findTodo.completed = resp.completed;
-							findTodo.modified = new Date().toLocaleString();
+					if (resp) {
+						todos.update((items) => {
+							const findTodo = items.find((t) => t.uuid === todo.uuid);
+							if (findTodo) {
+								findTodo.todo = resp.todo;
+								findTodo.notes = resp.notes;
+								findTodo.completed = resp.completed;
+								findTodo.modified = new Date().toLocaleString();
 
-							if (resp.completed === true) {
-								findTodo.completedAt = new Date().toLocaleString();
+								if (resp.completed === true) {
+									findTodo.completedAt = new Date().toLocaleString();
+								}
 							}
-						}
-						return items;
-					});
+							return items;
+						});
+					}
 				}
 			};
 			modalStore.trigger(modal);
